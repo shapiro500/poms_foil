@@ -177,7 +177,7 @@ function spawnAtRandomPosition() {
 function setupInteraction() {
     document.addEventListener('keydown', (e) => {
         if (e.code === 'Digit1' || e.code === 'Numpad1' || e.key === '1') {
-            if (!e.repeat) {
+            if (!e.repeat && !isKeyDown) {
                 hasPressedKey = true;
                 isKeyDown = true;
                 keyDownStartTick = tickCount;
