@@ -176,7 +176,7 @@ function spawnAtRandomPosition() {
 
 function setupInteraction() {
     document.addEventListener('keydown', (e) => {
-        if (e.code === 'Digit1' || e.code === 'Numpad1') {
+        if (e.code === 'Digit1' || e.code === 'Numpad1' || e.key === '1') {
             if (!e.repeat) {
                 hasPressedKey = true;
                 isKeyDown = true;
@@ -187,7 +187,7 @@ function setupInteraction() {
     });
 
     document.addEventListener('keyup', (e) => {
-        if (e.code === 'Digit1' || e.code === 'Numpad1') {
+        if (e.code === 'Digit1' || e.code === 'Numpad1' || e.key === '1') {
             isKeyDown = false;
         }
     });
